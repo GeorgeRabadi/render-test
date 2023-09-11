@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 app.use(express.static('dist'))
+require('dotenv').config
 const Phone = require('./models/phone')
 
 var morgan = require('morgan')
